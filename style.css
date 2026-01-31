@@ -118,8 +118,20 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .card {
@@ -171,7 +183,19 @@ body {
 
     .navbar {
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
+        padding: 10px 0;
+    }
+
+    .navbar nav a {
+        font-size: 0.85rem;
+        /* smaller text */
+        margin-left: 10px;
+    }
+
+    .navbar nav {
+        display: flex;
+        gap: 12px;
     }
 
     .home {
