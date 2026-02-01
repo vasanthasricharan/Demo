@@ -367,7 +367,7 @@ body {
     }
 
     .about-text h2 {
-        font-size: 2.2rem;
+        font-size: 2.6rem;
         /* Bigger heading for mobile */
     }
 
@@ -377,8 +377,9 @@ body {
     }
 
     .about-image img {
-        width: 260px;
+        width: 360px;
         /* Bigger than before but still balanced */
-        max-width: 90%;
+        max-width: 100%;
     }
 }
+
