@@ -10,32 +10,44 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 .navbar {
     position: fixed;
     width: 100%;
     top: 0;
-    padding: 15px 20px;
-    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 40px;
+    /* balanced desktop spacing */
+    background: rgba(0, 0, 0, 0.85);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
 }
 
-.navbar nav {
-    margin-right: 60px;
+/* Logo */
+.navbar h2 {
+    font-size: 1.2rem;
 }
 
+/* Navigation container */
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    /* clean spacing */
+}
+
+/* Navigation links */
 .navbar nav a {
     position: relative;
-    margin-left: 40px;
     text-decoration: none;
     color: white;
     font-size: 1rem;
     padding-bottom: 5px;
+    transition: 0.3s ease;
 }
 
+/* Underline animation */
 .navbar nav a::after {
     content: "";
     position: absolute;
@@ -56,13 +68,16 @@ body {
     color: #a855f7;
 }
 
-/* SECTIONS */
+/* ================= MOBILE NAVBAR ================= */
+@media (max-width: 768px) {}
+
+/* ================= SECTIONS ================= */
 .section {
     min-height: 100vh;
     padding: 120px 10%;
 }
 
-/* HOME */
+/* ================= HOME ================= */
 .home {
     display: flex;
     flex-wrap: wrap;
@@ -87,7 +102,7 @@ body {
     border-radius: 10px;
 }
 
-/* ABOUT */
+/* ================= ABOUT ================= */
 .about {
     display: flex;
     flex-wrap: wrap;
@@ -114,7 +129,7 @@ body {
     border-radius: 50%;
 }
 
-/* BUTTONS */
+/* ================= BUTTONS ================= */
 .buttons {
     margin-top: 20px;
 }
@@ -133,7 +148,7 @@ body {
     background: #a855f7;
 }
 
-/* SHOWCASE */
+/* ================= SHOWCASE ================= */
 .showcase h2 {
     margin-bottom: 40px;
 }
@@ -169,7 +184,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* CONTACT SECTION */
+/* ================= CONTACT SECTION ================= */
 .contact-title {
     text-align: center;
     margin-bottom: 50px;
@@ -199,7 +214,7 @@ body {
     line-height: 1.6;
 }
 
-/* CONTACT FORM FIX */
+/* ================= CONTACT FORM ================= */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -239,9 +254,6 @@ body {
     color: white;
     cursor: pointer;
     transition: 0.3s ease;
-}
-
-.contact-form button {
     align-self: center;
 }
 
@@ -250,7 +262,7 @@ body {
     border-color: #a855f7;
 }
 
-/* SOCIAL LINKS IMPROVED */
+/* ================= SOCIAL LINKS ================= */
 .social-icons {
     display: flex;
     flex-direction: column;
@@ -281,33 +293,29 @@ body {
     border-color: #a855f7;
 }
 
-/* Mobile Layout */
+/* ================= MOBILE ================= */
 @media (max-width: 768px) {
-
-    .contact-wrapper {
-        flex-direction: column;
-    }
-
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-
     .navbar {
         flex-direction: column;
-        gap: 5px;
-        padding: 10px 0;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 0;
+        gap: 8px;
+    }
+
+    .navbar h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .navbar nav {
+        justify-content: center;
+        gap: 18px;
+        flex-wrap: wrap;
     }
 
     .navbar nav a {
         font-size: 0.85rem;
-        /* smaller text */
-        margin-left: 10px;
-    }
-
-    .navbar nav {
-        display: flex;
-        gap: 12px;
     }
 
     .home {
@@ -323,4 +331,7 @@ body {
         width: 200px;
     }
 
+    .contact-wrapper {
+        flex-direction: column;
+    }
 }
