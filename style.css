@@ -334,13 +334,19 @@ body {
         flex-direction: column;
     }
 
+    .home {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .video-wrapper {
         width: 100%;
+        margin-top: 20px;
     }
 
     .video-wrapper video {
         width: 100%;
-        max-width: 100%;
         height: auto;
+        border-radius: 12px;
     }
 }
