@@ -13,10 +13,10 @@ body {
 /* ================= NAVBAR ================= */
 .navbar {
     position: fixed;
-    width: 100%;
     top: 0;
-    padding: 15px 40px;
-    /* balanced desktop spacing */
+    width: 100%;
+    padding: 15px 8%;
+    /* this controls left-right spacing */
     background: rgba(0, 0, 0, 0.85);
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,6 @@ body {
     display: flex;
     align-items: center;
     gap: 35px;
-    /* clean spacing */
 }
 
 /* Navigation links */
@@ -67,9 +66,6 @@ body {
 .navbar nav a:hover {
     color: #a855f7;
 }
-
-/* ================= MOBILE NAVBAR ================= */
-@media (max-width: 768px) {}
 
 /* ================= SECTIONS ================= */
 .section {
@@ -296,6 +292,9 @@ body {
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
     .navbar {
+        left: 0;
+        transform: none;
+        width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -333,5 +332,15 @@ body {
 
     .contact-wrapper {
         flex-direction: column;
+    }
+
+    .video-wrapper {
+        width: 100%;
+    }
+
+    .video-wrapper video {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
 }
