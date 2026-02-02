@@ -544,8 +544,16 @@ body {
         padding: 100px 5%;
     }
 
+    .video-wrapper {
+        width: 100%;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
     .video-wrapper video {
         width: 100%;
+        max-width: 100%;
+        border-radius: 12px;
     }
 
     .home-content {
@@ -572,11 +580,7 @@ body {
     }
 
     .about-text h2 {
-        font-size: 2.2rem;
-    }
-
-    .about-text h2 {
-        font-size: 1.4rem;
+        font-size: 2rem;
     }
 
     .about-text p {
