@@ -146,6 +146,66 @@ body {
     border-radius: 50%;
 }
 
+/* ================= STATS SECTION ================= */
+
+.stats-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0px 10%;
+    background: black;
+    cursor: pointer;
+}
+
+.stat-card {
+    flex: 1;
+    background: #000;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+    text-align: left;
+    transition: 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+    border-color: #a855f7;
+}
+
+.stat-icon {
+    font-size: 28px;
+    border: 2px solid white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.stat-number {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.stat-card h4 {
+    margin-top: 10px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.stat-card p {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-top: 5px;
+}
+
 /* ================= BUTTONS ================= */
 .buttons {
     margin-top: 20px;
@@ -591,6 +651,21 @@ body {
     .about-image img {
         width: 260px;
         max-width: 90%;
+    }
+
+    .stats-section {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 5%;
+    }
+
+    .stat-card {
+        text-align: center;
+    }
+
+    .stat-number {
+        position: static;
+        margin-top: 10px;
     }
 
     #showcase {
